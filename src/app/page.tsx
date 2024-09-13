@@ -9,7 +9,7 @@ export default function Home() {
   }, []);
   return (
     <div>
-      <h1>Hello</h1>
+      <h1>こんにちは!!!神宮111</h1>
     </div>
   );
 }
