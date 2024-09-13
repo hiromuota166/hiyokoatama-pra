@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import Image from "next/image";
 
 const config: Config = {
   content: [
@@ -8,9 +9,16 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      backgroundSize: {
+        customSize: "150px 150px",
+      },
+      backgroundImage: {
+        customBackGround: "url('/BartuPinIcon.svg')",
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        defaultBackGround: "#FFFEFA",
       },
     },
   },
