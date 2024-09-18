@@ -22,7 +22,7 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, async (firebaseUser) => {
       if (firebaseUser) {
-        console.log(firebaseUser);
+        // console.log(firebaseUser);
         const ref = doc(db, `users/${firebaseUser.uid}`);
         const snap = await getDoc(ref);
 
