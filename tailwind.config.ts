@@ -1,5 +1,4 @@
 import type { Config } from "tailwindcss";
-import Image from "next/image";
 
 const config: Config = {
   content: [
@@ -8,17 +7,26 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    fontFamily: {
+      sans: ["Noto Sans JP", "sans-serif"],
+      serif: ["Noto Serif JP", "serif"],
+      aboreto: ["Aboreto", "serif"],
+    },
     extend: {
       backgroundSize: {
         customSize: "150px 150px",
       },
       backgroundImage: {
-        customBackGround: "url('/BartuPinIcon.svg')",
+        customSpecial: "url(/birth-pin-icon.png), url(/special-day.png)",
+        specialDay: "url('/special-day.svg')",
       },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
         defaultBackGround: "#FFFEFA",
+        titleText: "#644C44",
+        writingText: "#8D6A5F",
+        pin: "#FEB69F",
       },
     },
   },
